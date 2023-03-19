@@ -29,7 +29,7 @@ Elijo
 
 GENERA LOS SIGUIENTES ARCHIVOS:
 * [2BNAprocesado.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAprocesado.gro) 
-* [topol.top](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol.top) 
+* [topol.top](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/#topol.top.1#) 
 * [topol_DNA_chain_A.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol_DNA_chain_A.itp) 
 * [topol_DNA_chain_B.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol_DNA_chain_B.itp) 
 * [posre_DNA_chain_A.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/posre_DNA_chain_A.itp) 
@@ -54,3 +54,41 @@ GENERA LOS SIGUIENTES ARCHIVOS:
 * [2BNAcaja.pdb](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAcaja.pdb)
 
 ![2BNA en caja triclinica de medidas 3.234,3.650,5.436 y angulos 90,90,90](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/imagenes/2BNAcaja.png)
+
+2- Ahora solvato la molecula de ADN con agua spce llenando la caja.  
+Tengo que poner el spc216.gro pues es el GRO de agua de tres puntos los parametros del spce los puse en el gmx pdb2gmx [...] -water spce
+
+___________________________
+gmx solvate -cp 2BNAcaja.gro -cs spc216.gro -o 2BNAsolv.gro -p topol_solv.top
+___________________________
+
+GENERA LOS SIGUIENTES ARCHIVOS:
+* [topol.top](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/#topol.top.2#)
+* [2BNAsolv.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAsolv.gro)
+
+Ahora es el momento de agregar los iones:  
+<span style="color:red">Dado que tengo 12 pares de bases y no tengo grupos fosfato en las puntas hay 22 grupos fosfato. Por la regla de Manning [Manning, 1978](https://doi.org/10.1017/S0033583500002031) se que aproximadamente se van a condensar unos 3/4 de NA, esto es 17 sodios. Esto representa un problema a resolver.</span>  
+Primero debo decargar un MDP del tutorial lyzosyme, lo llamo [ion.mdp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/ions.mdp) va a generar un archivo TPR para luego poder intercambiar moleculas de agua por iones.
+
+_______________________
+gmx grompp -f ions.mdp -c 2BNAsolv.gro -p topol.top -o ions.tpr
+_______________________
+
+GENERA LOS SIGUIENTES ARCHIVOS:
+* [ions.tpr](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/ion.tpr)
+* [mdout.mdp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/mdout.mdp)
+
+Una vez que genero el ions.tpr puedo reemplazar moleculas de agua con iones y lo dejare neutral con -neutral pero en un futuro en este paso ire modificando la concentracion de iones usando tambien -conc, <span style="color:red">quiza modificando esto pueda partir de 17 iones NA.</span>  
+Agrego los iones para neutralizar las 22 cargas de ADN
+
+_____________________________
+gmx genion -s ions.tpr -o 2BNAions.gro -p topol.top -pname NA -nname
+CL -neutral
+_____________________________
+
+Me pide que elija que elementos remplazar uso el 3
+Group     3 (            SOL) has  5379 elements
+
+GENERA LOS SIGUIENTES ARCHIVOS:
+* [topol.top](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol.top)
+* [2BNAions.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAions.gro)

@@ -45,5 +45,4 @@ DNA (5'-D(*CP*GP*CP*GP*AP*AP*TP*TP*CP*GP*CP*G)-; 3 3') in water
 ; Compound        #mols
 DNA_chain_A         1
 DNA_chain_B         1
-SOL         1771
-NA               22
+SOL              1793
