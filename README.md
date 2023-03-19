@@ -67,7 +67,7 @@ GENERA LOS SIGUIENTES ARCHIVOS:
 * [2BNAsolv.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAsolv.gro)
 
 Ahora es el momento de agregar los iones:  
-<span style="color:red">Dado que tengo 12 pares de bases y no tengo grupos fosfato en las puntas hay 22 grupos fosfato. Por la regla de Manning [Manning, 1978](https://doi.org/10.1017/S0033583500002031) se que aproximadamente se van a condensar unos 3/4 de NA, esto es 17 sodios. Esto representa un problema a resolver.</span>  
+<font color="red">Dado que tengo 12 pares de bases y no tengo grupos fosfato en las puntas hay 22 grupos fosfato. Por la regla de Manning [Manning, 1978](https://doi.org/10.1017/S0033583500002031) se que aproximadamente se van a condensar unos 3/4 de NA, esto es 17 sodios. Esto representa un problema a resolver.</font>  
 Primero debo decargar un MDP del tutorial lyzosyme, lo llamo [ion.mdp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/ions.mdp) va a generar un archivo TPR para luego poder intercambiar moleculas de agua por iones.
 
 _______________________
@@ -78,7 +78,7 @@ GENERA LOS SIGUIENTES ARCHIVOS:
 * [ions.tpr](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/ion.tpr)
 * [mdout.mdp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/mdout.mdp)
 
-Una vez que genero el ions.tpr puedo reemplazar moleculas de agua con iones y lo dejare neutral con -neutral pero en un futuro en este paso ire modificando la concentracion de iones usando tambien -conc, <span style="color:red">quiza modificando esto pueda partir de 17 iones NA.</span>  
+Una vez que genero el ions.tpr puedo reemplazar moleculas de agua con iones y lo dejare neutral con -neutral pero en un futuro en este paso ire modificando la concentracion de iones usando tambien -conc, <font color="red">quiza modificando esto pueda partir de 17 iones NA.</font>  
 Agrego los iones para neutralizar las 22 cargas de ADN
 
 _____________________________
