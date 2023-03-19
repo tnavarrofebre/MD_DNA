@@ -5,14 +5,12 @@ DNA in water Molecular Dynamic
 ## Preparation
 
 Download File B-DNA--> 2BNA.pdb
------------------------------------
 https://www.rcsb.org/structure/2bna
------------------------------------
 
 To remove the waters from B-DNA. These waters come from the crystal structure.
--------------------------------------
+_____________________________________
 grep -v HOH 2BNA.pdb > 2BNAlimpio.pdb
--------------------------------------
+_____________________________________
 
 The objective now is to build three files:
 1- The molecule's topology file
@@ -22,9 +20,9 @@ The topology file (usually named topol.top by default) contains:
 * Non-bonded parameters: charge, mass, etc.
 * Bonded parameters: angles, dihedrals, bonds, etc.
 
----------------------------------------------------------------
+_____________________________________
 gmx pdb2gmx -f 2BNAlimpio.pdb -o 2BNAprocesado.gro -water spce
----------------------------------------------------------------
+_____________________________________
 Choose 
 4: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
 GENERA LOS SIGUIENTES ARCHIVOS:
