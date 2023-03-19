@@ -32,9 +32,9 @@ Elijo
 4: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
 
 GENERA LOS SIGUIENTES ARCHIVOS:
-* 2BNAprocesado.gro
-* topol.top
-* topol_DNA_chain_A.itp
-* topol_DNA_chain_B.itp
-* posre_DNA_chain_A.itp
-* posre_DNA_chain_B.itp
+* [2BNAprocesado.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAprocesado.gro) 
+* [topol.top](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol.top) 
+* [topol_DNA_chain_A.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol_DNA_chain_A.itp) 
+* [topol_DNA_chain_B.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol_DNA_chain_B.itp) 
+* [posre_DNA_chain_A.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/posre_DNA_chain_A.itp) 
+* [posre_DNA_chain_B.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/posre_DNA_chain_B.itp) 
