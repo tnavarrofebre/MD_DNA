@@ -2,32 +2,32 @@
 DNA in water Molecular Dynamic  
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tnavarrofebre/MD_DNA)
 
-## Preparation
+## Preparación
 
-Download File B-DNA--> 2BNA.pdb
+Descarga el archivo B-DNA--> 2BNA.pdb
 https://www.rcsb.org/structure/2bna
 
-To remove the waters from B-DNA. These waters come from the crystal structure.
+ELimino las aguas del B-DNA. Estas aguas provienen de la estructuración del cristal
 _____________________________________
 grep -v HOH 2BNA.pdb > 2BNAlimpio.pdb
 _____________________________________
 
-The objective now is to build three files:
+Ahora el objetivo es construir tres archivos:
 
-1- The molecule's topology file
+1- la topologia de la molecula
 
-2- The restrained positions file
+2- el archivo de posiciones restringidas
 
-3- A post-processed structure file
+3- un archivo de estructura postprocesado
 
-The topology file (usually named topol.top by default) contains:
-* Non-bonded parameters: charge, mass, etc.
-* Bonded parameters: angles, dihedrals, bonds, etc.
+el archivo de la topologia (topol.top por defecto) contiene:
+* parametros de no ligadura: carga, masa, etc
+* parametro de ligadura: angulos, dihedros, enlaces, etc
 
 _____________________________________
 gmx pdb2gmx -f 2BNAlimpio.pdb -o 2BNAprocesado.gro -water spce
 _____________________________________
-Choose 
+Elijo
 
 4: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
 
