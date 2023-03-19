@@ -53,4 +53,4 @@ ________________________________
 GENERA LOS SIGUIENTES ARCHIVOS:
 * [2BNAcaja.pdb](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAcaja.pdb)
 
-![2BNA en caja triclinica de medidas 3.234,3.650,5.436 y angulos 90,90,90](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/imagenes.2BNAcaja.png)
+![2BNA en caja triclinica de medidas 3.234,3.650,5.436 y angulos 90,90,90](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/imagenes/2BNAcaja.png)
