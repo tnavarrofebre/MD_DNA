@@ -34,3 +34,23 @@ GENERA LOS SIGUIENTES ARCHIVOS:
 * [topol_DNA_chain_B.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/topol_DNA_chain_B.itp) 
 * [posre_DNA_chain_A.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/posre_DNA_chain_A.itp) 
 * [posre_DNA_chain_B.itp](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/posre_DNA_chain_B.itp) 
+
+Ahora viene el momento de la solvatación  
+1- Definir el tamaño de la caja con editconf, por ahora la voy a hacer pequeña y triclínica.  
+____________________________
+gmx editconf -f 2BNAprocesado.gro -o 2BNAcaja.gro -c -bt triclinic
+-box 3.234  3.650  5.436 -angles 90 90 90
+____________________________ 
+
+GENERA LOS SIGUIENTES ARCHIVOS:
+* [2BNAcaja.gro](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAcaja.gro)
+
+Convierto 2BNAcaja.gro a 2BNAcaja.pdb para poder verla con Avogadro
+________________________________
+gmx editconf -f 2BNAcaja.gro -o 2BNAcaja.pdb
+________________________________
+
+GENERA LOS SIGUIENTES ARCHIVOS:
+* [2BNAcaja.pdb](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNAcaja.pdb)
+
+![2BNA en caja triclinica de medidas 3.234,3.650,5.436 y angulos 90,90,90](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/imagenes.2BNAcajajpg)
