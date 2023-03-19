@@ -27,11 +27,10 @@ gmx pdb2gmx -f 2BNAlimpio.pdb -o 2BNAprocesado.gro -water spce
 Choose 
 4: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
 GENERA LOS SIGUIENTES ARCHIVOS:
-_______________________________
+
 2BNAprocesado.gro
 topol.top
 topol_DNA_chain_A.itp
 topol_DNA_chain_B.itp
 posre_DNA_chain_A.itp
 posre_DNA_chain_B.itp
-_______________________________
