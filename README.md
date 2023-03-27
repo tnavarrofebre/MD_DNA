@@ -7,7 +7,7 @@ DNA in water Molecular Dynamic
 Descarga el archivo [B-DNA](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNA.pdb)--> [2BNA.pdb](https://www.rcsb.org/structure/2bna)
 
 Elimino las aguas del B-DNA. Estas aguas provienen de la estructuración del cristal.  
-Utilizo funcion de bash <i>grep<\i> que elimina la LINEA de un archivo de texto plano que contenga la palabra escrita luego de -v. 
+Utilizo funcion de bash <i>grep</i> que elimina la LINEA de un archivo de texto plano que contenga la palabra escrita luego de -v. 
 _____________________________________
 grep -v HOH 2BNA.pdb > 2BNAlimpio.pdb
 _____________________________________
