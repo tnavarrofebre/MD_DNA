@@ -4,6 +4,8 @@ DNA in water Molecular Dynamic
 
 ## Preparación
 
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+
 [![Comprehensive Markdown Crash Course](https://markdown-videos.deta.dev/youtube/FEa2diI2qgA)](https://www.youtube.com/watch?v=FEa2diI2qgA)  
 Ejemplo:
 
