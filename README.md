@@ -4,7 +4,8 @@ DNA in water Molecular Dynamic
 
 ## Preparación
 
-<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/FEa2diI2qgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+[![Comprehensive Markdown Crash Course](https://markdown-videos.deta.dev/youtube/FEa2diI2qgA)](https://www.youtube.com/watch?v=FEa2diI2qgA)
+Ejemplo:
 
 Descarga el archivo [B-DNA](https://github.com/tnavarrofebre/MD_DNA/blob/main/Preparacion/2BNA.pdb)--> [2BNA.pdb](https://www.rcsb.org/structure/2bna)
 
